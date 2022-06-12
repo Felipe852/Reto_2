@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/Style.css">
+    <link href="http://fonts.cdnfonts.com/css/skranji" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <section class="logos">
+            <div class="izquierda">
+                <img src="/imagenes/logo.png" alt="logo" class="planeta">
+                <h1 class="letras">Geo-Paises Geek</h1>
+            </div>
+            <div class="derecha">
+                <img src="/imagenes/facebook.png" alt="facebook" id="facebook" class="redes">
+                <img src="/imagenes/twitter-sign.png" alt="twitter" id="twitter" class="redes">
+                <img src="/imagenes/instagram.png" alt="instagram" id="instagram" class="redes">
+                <img src="/imagenes/youtube.png" alt="youtube" id="youtube" class="redes">
+            </div>
+        </section>
+        <section class="imageneshover">
+            <div class="imagenesclick">
+                <img  src="/imagenes/AFRICA.png" alt="africa" id="imgafrica" class="images" >
+                <img  src="/imagenes/ASIA.png" alt="asia" id="imgasia" class="images" >
+                <img  src="/imagenes/EUROPA.png" alt="europa" id="imgeuropa" class="images" >
+                <img  src="/imagenes/OCEANIA.png" alt="oceania" id="imgoceania" class="images" >
+                <img  src="/imagenes/AMERICA.png" alt="america" id="imgamerica" class="images" >
+            </div>
+        </section>
+        <section class="contenido_restante">
+            <div id="lugar1" class="lugares">
+                <img src="/imagenes/Lugares/Africa/africa-kilimanjaro.jpg" alt="kilimanjaro" id="img1" class="imgcambiar">
+                <span id="texto1" class="spantexto">El Kilimanjaro, Tanzania</span>
+                <button id = "btn1" class="btns">Ver más</button>
+            </div> 
+            <div id="lugar2" class="lugares">
+                <img src="/imagenes/Lugares/Africa/chott_el_jerid-tunez.jpg" alt="" id="img2" class="imgcambiar" >
+                <span id="texto2" class="spantexto">Chott el Jerid, Túnez</span>
+                <button id = "btn2" class="btns">Ver más</button>
+            </div> 
+            <div id="lugar3" class="lugares">
+                <img src="/imagenes/Lugares/Africa/isla-mauricio.jpg" alt="" id="img3" class="imgcambiar" >
+                <span id="texto3" class="spantexto">Las playas de Isla Mauricio</span>
+                <button id = "btn3" class="btns">Ver más</button>
+            </div> 
+            <div id="lugar4" class="lugares">
+                <img src="/imagenes/Lugares/Africa/lago nakuru-kenia.jpg" alt="" id="img4" class="imgcambiar" >
+                <span id="texto4" class="spantexto">Lago Nakuru, Kenia</span>
+                <button id = "btn4" class="btns">Ver más</button>
+            </div> 
+            <div id="lugar5" class="lugares">
+                <img src="/imagenes/Lugares/Africa/lalibela-etiopia.jpg" alt="" id="img5" class="imgcambiar" >
+                <span id="texto5" class="spantexto">Lalibela, en Etiopía</span>
+                <button id = "btn5" class="btns">Ver más</button>
+            </div> 
+            <div id="lugar6" class="lugares">
+                <img src="/imagenes/Lugares/Africa/madagascar.jpg" alt="" id="img6" class="imgcambiar" >
+                <span id="texto6" class="spantexto">La avenida de los baobabs de Madagascar</span>
+                <button id = "btn6" class="btns">Ver más</button>
+            </div>
+        </section>
+        
+    </header>
+    <section class="modal">
+        <div class="modal-container">
+            <div class="descripcion-modal">
+                <a href="#" class="modal-close">Volver</a>
+                <img src="imagenes/Lugares/Africa/africa-kilimanjaro.jpg" alt="" id="cambiar_img">
+                <h1 id="titulo_cambiar">El Kilimanjaro, Tanzania</h1>
+                <span id="descrip_cambiar">El Kilimanjaro es el punto más elevado de África, una montaña formada por tres volcanes inactivos que se ha convertido en un emblema del continente. La imagen del Kilimanjaro con su pico cubierto de nieve y las manadas de elefantes caminando en sus faldas es una de las más hermosas que vi en mi vida</span>
+                <img src="/imagenes/AFRICA.png" alt="" id="miniatura_cambiar">
+            </div>
+            <form id="formulario">
+                <h3>Agenda tu cita aquí</h3>
+                <input class="nosequeponer" id="agend_lugar" type="text" name="agenda-lugar" placeholder="lugar" disabled="disabled" >
+                <input class="nosequeponer" id="agend_continent" type="text" placeholder="continente" disabled="disabled">
+                <label for="">Fecha de partida</label>
+                <input class="nosequeponer" type="date" name="fecha_salida" id="fecha_salida" placeholder="dd/mm/aaaa"   >
+                <label for="">Fecha de retorno</label>
+                <input class="nosequeponer" type="date" name="fecha_retorno" id="fecha_retorno" placeholder="dd/mm/aaaa"  >
+                <textarea class="nosequeponer" name="comentarios" id="comentarios" cols="30" rows="15" placeholder="comentarios" ></textarea>
+                <button  id="btn_enviar_formulario" class="btn_form">Enviar</button>
+            </form>
+
+        </div>
+    </section>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/Scripts/main.js" type="module"></script>
+
+</body>
+</html>
